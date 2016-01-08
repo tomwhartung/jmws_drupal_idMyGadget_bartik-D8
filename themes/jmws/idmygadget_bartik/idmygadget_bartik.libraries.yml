@@ -83,4 +83,4 @@ maintenance_page:
       css/maintenance-page.css: {}
   dependencies:
     - system/maintenance
-    - bartik/global-styling
+    - idmygadget_bartik/global-styling
