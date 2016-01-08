@@ -2,7 +2,7 @@
 
 Code to integrate idMyGadget [jmws_idMyGadget_for_drupal-d8](https://github.com/tomwhartung/jmws_idMyGadget_for_drupal-d8) with the default Drupal 8 theme Bartik.
 
-Note that there is an experimental version of this repo named [https://github.com/tomwhartung/jmws_drupal_idMyGadget_bartik-d8-exp](jmws_drupal_idMyGadget_bartik-d8-exp).
+Note that there is an experimental version of this repo named [jmws_drupal_idMyGadget_bartik-d8-exp](https://github.com/tomwhartung/jmws_drupal_idMyGadget_bartik-d8-exp).
 
 Also, there are previous efforts!  At this time, this is the most recent one (and hopefully the last).
 
