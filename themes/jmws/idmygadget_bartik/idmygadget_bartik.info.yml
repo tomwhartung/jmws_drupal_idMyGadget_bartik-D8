@@ -1,12 +1,12 @@
-name: Bartik
+name: IdMyGadget_Bartik
 type: theme
 base theme: classy
-description: 'A flexible, recolorable theme with many regions and a responsive, mobile-first layout.'
-package: Core
+description: 'Integrating IdMyGadget device detection with Bartik.'
+package: Jmws
 # version: VERSION
-# core: 8.x
+core: 8.x
 libraries:
-  - bartik/global-styling
+  - idmygadget_bartik/global-styling
 ckeditor_stylesheets:
   - css/base/elements.css
   - css/components/captions.css
@@ -32,8 +32,3 @@ regions:
   footer_fourth: 'Footer fourth'
   footer_fifth: 'Footer fifth'
 
-# Information added by Drupal.org packaging script on 2015-12-02
-version: '8.0.1'
-core: '8.x'
-project: 'drupal'
-datestamp: 1449067409
