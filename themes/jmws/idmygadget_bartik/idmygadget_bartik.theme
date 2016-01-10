@@ -127,11 +127,11 @@ function bartik_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_st
  * Preprocess the page
  */
 function idmygadget_bartik_preprocess_page( &$vars ) {
-  // global $jmwsIdMyGadget;
+  global $jmwsIdMyGadget;
   require_once( 'src/JmwsIdMyGadget/JmwsIdMyGadgetThemeService.php' );
   $jmwsIdMyGadgetThemeService = new JmwsIdMyGadgetThemeService();
   $idMyGadgetService = $jmwsIdMyGadgetThemeService->getService();
-  $jmwsIdMyGadget = $idMyGadgetService->jmwsIdMyGadget;
+  // $jmwsIdMyGadget = $idMyGadgetService->jmwsIdMyGadget;
   $vars['sanityCheckString'] = $jmwsIdMyGadget->getSanityCheckString();
 
   if ( ! isset($idMyGadgetService) ) {
