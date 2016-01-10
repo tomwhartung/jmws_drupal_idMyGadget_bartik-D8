@@ -122,3 +122,19 @@ function bartik_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_st
     $form[$key]['submit']['#attributes']->addClass('search-form__submit');
   }
 }
+
+/**
+ * Preprocess the page
+ */
+function idmygadget_bartik_preprocess_page( &$vars ) {
+  // global $jmwsIdMyGadget;
+  require_once( 'src/JmwsIdMyGadget/JmwsIdMyGadgetThemeService.php' );
+  $jmwsIdMyGadgetThemeService = new JmwsIdMyGadgetThemeService();
+  $idMyGadgetService = $jmwsIdMyGadgetThemeService->getService();
+  $jmwsIdMyGadget = $idMyGadgetService->jmwsIdMyGadget;
+  $vars['sanityCheckString'] = $jmwsIdMyGadget->getSanityCheckString();
+
+  if ( ! isset($idMyGadgetService) ) {
+    drupal_set_message( t($jmwsIdMyGadgetThemeService ->getErrorMessage()), 'error' );
+  }
+}
