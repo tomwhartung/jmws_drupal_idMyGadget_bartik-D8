@@ -3,7 +3,6 @@ type: theme
 base theme: classy
 description: 'Integrating IdMyGadget device detection with Bartik.'
 package: Jmws
-# version: VERSION
 core: 8.x
 libraries:
   - idmygadget_bartik/global-styling
