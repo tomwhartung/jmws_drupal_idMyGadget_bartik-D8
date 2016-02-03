@@ -133,6 +133,8 @@ function idmygadget_bartik_preprocess_page( &$vars ) {
   $idMyGadgetService = $jmwsIdMyGadgetThemeService->getService();
   // $jmwsIdMyGadget = $idMyGadgetService->jmwsIdMyGadget;
   $vars['sanityCheckString'] = $jmwsIdMyGadget->getSanityCheckString();
+  $logoNameTitleDescriptionHtml = $jmwsIdMyGadget->getLogoNameTitleDescriptionHtml();
+  error_log( 'strlen($logoNameTitleDescriptionHtml): ' . strlen($logoNameTitleDescriptionHtml) );
 
   if ( ! isset($idMyGadgetService) ) {
     drupal_set_message( t($jmwsIdMyGadgetThemeService ->getErrorMessage()), 'error' );
