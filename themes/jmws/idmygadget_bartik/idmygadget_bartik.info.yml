@@ -11,6 +11,8 @@ ckeditor_stylesheets:
   - css/components/captions.css
   - css/components/table.css
 regions:
+  phone_header_nav: 'Phone Header Nav'
+  phone_footer_nav: 'Phone Footer Nav'
   header: Header
   primary_menu: 'Primary menu'
   secondary_menu: 'Secondary menu'
