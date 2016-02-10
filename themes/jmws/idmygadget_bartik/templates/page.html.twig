@@ -54,6 +54,7 @@
   <div id="page" {{jqmDataRolePage}}>
     <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}} {{jqmDataRoleHeader}} {{jqmDataThemeAttribute}}">
       <div class="section layout-container clearfix">
+        {{ phoneHeaderNav|raw }}
         {{ page.secondary_menu }}
         {{ logoNameTitleDescriptionHtml|raw }}
         {{ page.primary_menu }}
@@ -123,6 +124,7 @@
             {{ page.footer_fifth }}
           </div>
         {% endif %}
+        {{ phoneFooterNav|raw }}
       </div>
     </footer>
   </div>
