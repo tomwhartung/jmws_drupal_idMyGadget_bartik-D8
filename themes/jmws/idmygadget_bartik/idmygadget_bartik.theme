@@ -141,6 +141,9 @@ function idmygadget_bartik_preprocess_page( &$vars ) {
   $idMyGadgetService = $jmwsIdMyGadgetThemeService->getService();
   // $jmwsIdMyGadget = $idMyGadgetService->jmwsIdMyGadget;
   $vars['sanityCheckString'] = $jmwsIdMyGadget->getSanityCheckString();
+
+  $vars['jqmDataRolePage'] = $jmwsIdMyGadget->jqmDataRole['page'];
+
   $vars['logoNameTitleDescriptionHtml'] = $jmwsIdMyGadget->getLogoNameTitleDescriptionHtml();
 
   if ( ! isset($idMyGadgetService) ) {
